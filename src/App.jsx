@@ -13,7 +13,7 @@ function App() {
       <Header />
       {/* <TopicNavigation /> */}
       <Routes>
-        <Route path='/:article_id' element={ <SingleArticle /> } />
+        <Route path='/articles/:article_id' element={ <SingleArticle /> } />
         <Route path='/articles' element={ <ArticleList /> } />
         <Route path='/' element={ <ArticleList /> } />
       </Routes>

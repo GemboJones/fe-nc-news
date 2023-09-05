@@ -17,3 +17,10 @@ export const getArticleById = (article_id) => {
         return response.data.article
     })
 }
+
+export const getCommentsById = (article_id) => {
+    return axios.get(`${BASE_URL}/articles/${article_id}/comments`)
+    .then((response) => {
+        return response.data.comments
+    })
+}
