@@ -9,3 +9,11 @@ export const getAllArticles = () => {
         return response.data.allArticles
     })
 }
+
+export const getArticleById = (article_id) => {
+    return axios
+    .get(`${BASE_URL}/articles/${article_id}`)
+    .then((response) => {
+        return response.data.article
+    })
+}

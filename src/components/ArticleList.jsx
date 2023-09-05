@@ -8,10 +8,9 @@ const ArticleList = () => {
   useEffect(() => {
     getAllArticles()
     .then((allArticles) => {
-      console.log(allArticles)
       setArticles(allArticles)
     })
-  }, [articles])
+  }, [])
 
   return (
     <ul className='article-list'>
