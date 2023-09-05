@@ -5,38 +5,32 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app {
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-color: lightgray;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header {
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-color: rgb(255, 205, 41);
+  margin: 1rem;
+  padding: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.article-list {
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-color: rgb(13, 153, 255);
+  margin: 1rem;
+  padding: 1rem;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.article-card {
+  list-style-type: none;
+  border-style: solid;
+  border-radius: 0.5rem;
+  border-color: rgb(13, 153, 255);
+  margin: 1rem;
 }
