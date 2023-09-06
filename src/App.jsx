@@ -6,14 +6,12 @@ import ArticleList from './components/ArticleList'
 import SingleArticle from './components/SingleArticle'
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <div className='app'>
       <Header />
-      {/* <TopicNavigation /> */}
       <Routes>
-        <Route path='/:article_id' element={ <SingleArticle /> } />
+        <Route path='/articles/:article_id' element={ <SingleArticle /> } />
         <Route path='/articles' element={ <ArticleList /> } />
         <Route path='/' element={ <ArticleList /> } />
       </Routes>
