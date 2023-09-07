@@ -24,3 +24,10 @@ export const getCommentsById = (article_id) => {
         return response.data.comments
     })
 }
+
+export const patchArticleVote = (article_id, updateVote) => {
+    return axios.patch(`${BASE_URL}/articles/${article_id}`, updateVote)
+    .then((response) => {
+        return response.data.updatedArticle.votes
+    })
+}
