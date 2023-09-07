@@ -12,7 +12,7 @@ const ArticleCard = ({image, author, comments, created, title, topic, votes}) =>
         <strong>Topic:</strong> {topic}
       </p>
       <p>
-        <strong>Likes:</strong> {votes}
+        <strong>Votes:</strong> {votes}
       </p>
       <p>
         <strong>Comments:</strong> {comments} 

@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import CommentCard from "./CommentCard";
 import { getCommentsById } from "../utils/api";
+import CommentAdder from "./CommentAdder";
 
 const CommentList = () => {
 
@@ -17,23 +18,30 @@ const CommentList = () => {
     })
   }, [article_id])
 
+  // const updateComments = (comment)=>{
+  //   setComments((currentComments)=>{
+  //     return [comment, ...currentComments]
+  //   })
+  // }
+
   if (isLoading) return <p>Loading...</p>
 
   return (
-    <>
-    <ul className='comment-list'>
-      {comments.map(({
-        comment_id, author, body, created_at, votes
-        }) => {
-          return <CommentCard 
-          key={comment_id} 
-          author={author} 
-          body={body} 
-          created={created_at} 
-          votes={votes} />
-        })}
-    </ul>
-    </>
+    <section className="comment-list">
+      <CommentAdder setComments={setComments}/>
+      <ul className='comment-list'>
+        {comments.map(({
+          comment_id, author, body, created_at, votes
+          }) => {
+            return <CommentCard 
+            key={comment_id} 
+            author={author} 
+            body={body} 
+            created={created_at} 
+            votes={votes} />
+          })}
+      </ul>
+    </section>
   );
 };
 
