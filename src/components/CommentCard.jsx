@@ -6,15 +6,15 @@ const CommentCard = ({ author, body, created, votes }) => {
       <p>
         <strong>{author} </strong> 
       </p>
-      <p>
+      {/* <p>
         <strong>Date:</strong> {created} 
-      </p>
+      </p> */}
       <p>
         {body}
       </p>
-      <p>
+      {/* <p>
         <strong>Likes:</strong> {votes}
-      </p>
+      </p> */}
     </li>
   )
 };

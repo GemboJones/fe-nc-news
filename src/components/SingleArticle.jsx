@@ -34,7 +34,7 @@ const SingleArticle = () => {
         </p>
         <img src={singleArticle.article_img_url} alt="" />
         <p>
-          <strong>Likes:</strong> {votes}
+          <strong>Votes:</strong> {votes}
         </p>
         <UpdateArticleVotes setVotes={setVotes}/>
         <p>
