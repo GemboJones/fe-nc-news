@@ -15,23 +15,36 @@
   border-style: solid;
   border-radius: 0.5rem;
   border-color: rgb(255, 205, 41);
-  margin: 1rem;
-  padding: 2rem;
+  /* margin: 1rem; */
+  /* padding: 2rem; */
 }
 
 .article-list {
-  border-style: solid;
+  /* border-style: solid;
   border-radius: 0.5rem;
-  border-color: blue;
-  margin: 1rem;
-  padding: 0 0 0 0;
+  border-color: rgb(231, 231, 231); */
+  /* margin: 1rem; */
+  padding: 0rem;
 }
 
 .article-card {
   list-style-type: none;
-  border-style: solid;
+  border: 2px solid;
   border-radius: 0.5rem;
-  border-color: rgb(13, 153, 255);
+  border-color: rgb(246, 247, 251);
+  margin: 2rem 0 2rem 0;
+  /* padding: 2rem;  */
+}
+
+.article-card:hover {
+  background-color: #e4ecff;
+  border: 2px solid;
+  border-color: #cedcff;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08), 0 12px 30px 0 rgba(0, 0, 0, 0.08);
+}
+
+.article-card__image {
+  width: 480px;
 }
 
 .single-article {
@@ -56,3 +69,4 @@
   border-radius: 0.5rem;
   border-color: rgb(13, 153, 255);
 }
+

@@ -7,7 +7,7 @@ const ArticleCard = ({image, author, comments, created, title, topic, votes}) =>
       <p>
         <strong>Date:</strong> {created} 
       </p>
-      <img src={image} alt="" />
+      <img className='article-card__image' src={image} alt="" />
       <p>
         <strong>Topic:</strong> {topic}
       </p>
