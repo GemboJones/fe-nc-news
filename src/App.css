@@ -25,6 +25,9 @@
   border-color: rgb(231, 231, 231); */
   /* margin: 1rem; */
   padding: 0rem;
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
 }
 
 .article-card {
@@ -44,7 +47,7 @@
 }
 
 .article-card__image {
-  width: 480px;
+  height: 260px;
 }
 
 .single-article {

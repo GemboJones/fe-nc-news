@@ -1,13 +1,21 @@
-import React from 'react'
+import React from "react";
 
-const ArticleCard = ({image, author, comments, created, title, topic, votes}) => {
+const ArticleCard = ({
+  image,
+  author,
+  comments,
+  created,
+  title,
+  topic,
+  votes,
+}) => {
   return (
-    <li className='article-card'>
+    <li className="article-card">
+      <img className="article-card__image" src={image} alt="" />
       <h2>{title} </h2>
-      <p>
+      {/* <p>
         <strong>Date:</strong> {created} 
-      </p>
-      <img className='article-card__image' src={image} alt="" />
+      </p> */}
       <p>
         <strong>Topic:</strong> {topic}
       </p>
@@ -15,10 +23,10 @@ const ArticleCard = ({image, author, comments, created, title, topic, votes}) =>
         <strong>Votes:</strong> {votes}
       </p>
       <p>
-        <strong>Comments:</strong> {comments} 
+        <strong>Comments:</strong> {comments}
       </p>
     </li>
-  )
-}
+  );
+};
 
-export default ArticleCard
+export default ArticleCard;
