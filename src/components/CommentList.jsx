@@ -27,7 +27,7 @@ const CommentList = () => {
   if (isLoading) return <p>Loading...</p>
 
   return (
-    <section className="comment-list">
+    <section className="comment-section">
       <CommentAdder setComments={setComments}/>
       <ul className='comment-list'>
         {comments.map(({

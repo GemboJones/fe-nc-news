@@ -24,28 +24,30 @@ const SingleArticle = () => {
 
   return (
     <>
-      <section className='single-article'>
+      <section className="single-article">
         <p>
-        <strong>Topic:</strong> {singleArticle.topic}
+          <strong>Topic:</strong> {singleArticle.topic}
         </p>
         <h2>{singleArticle.title} </h2>
         <p>
           <strong>Date:</strong> {singleArticle.created_at}
         </p>
-        <img src={singleArticle.article_img_url} alt="" />
+        <img
+          className="single-article__image"
+          src={singleArticle.article_img_url}
+          alt=""
+        />
         <p>
           <strong>Votes:</strong> {votes}
         </p>
-        <UpdateArticleVotes setVotes={setVotes}/>
+        <UpdateArticleVotes setVotes={setVotes} />
         <p>
           <strong>Author:</strong> {singleArticle.author}
         </p>
-        <p>
-          {singleArticle.body}
-        </p>
+        <p>{singleArticle.body}</p>
       </section>
       <section>
-          <CommentList />
+        <CommentList />
       </section>
     </>
   );

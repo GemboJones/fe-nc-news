@@ -15,28 +15,21 @@
   border-style: solid;
   border-radius: 0.5rem;
   border-color: rgb(255, 205, 41);
-  /* margin: 1rem; */
-  /* padding: 2rem; */
 }
 
 .article-list {
-  /* border-style: solid;
-  border-radius: 0.5rem;
-  border-color: rgb(231, 231, 231); */
-  /* margin: 1rem; */
   padding: 0rem;
   display: grid;
   column-gap: 50px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
 }
 
 .article-card {
   list-style-type: none;
   border: 2px solid;
   border-radius: 0.5rem;
-  border-color: rgb(246, 247, 251);
-  margin: 2rem 0 2rem 0;
-  /* padding: 2rem;  */
+  border-color: rgb(236, 237, 241);
+  margin: 1.5rem 0;
 }
 
 .article-card:hover {
@@ -47,29 +40,39 @@
 }
 
 .article-card__image {
-  height: 260px;
+  width: 100%;
+  height: auto;
+  max-height: 230px;
 }
 
 .single-article {
   border-style: solid;
   border-radius: 0.5rem;
   border-color: blue;
-  margin: 1rem;
   padding: 0rem;
 }
 
-.comment-list {
+.single-article__image {
+width: 100%;
+height: auto;
+}
+
+.comment-section {
   border-style: solid;
   border-radius: 0.5rem;
-  border-color: blue;
-  margin: 1rem;
+  border-color: darkorchid;
+}
+
+.comment-list {
   padding: 0rem;
 }
 
 .comment-card {
   list-style-type: none;
-  border-style: solid;
+  border: 2px solid;
   border-radius: 0.5rem;
-  border-color: rgb(13, 153, 255);
+  border-color: rgb(236, 237, 241);
+  margin: 1rem;
+  padding: 0.75rem;
 }
 
