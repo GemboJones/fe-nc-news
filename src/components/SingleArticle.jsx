@@ -37,12 +37,9 @@ const SingleArticle = () => {
           src={singleArticle.article_img_url}
           alt=""
         />
+        <UpdateArticleVotes setVotes={setVotes} votes={votes} />
         <p>
-          <strong>Votes:</strong> {votes}
-        </p>
-        <UpdateArticleVotes setVotes={setVotes} />
-        <p>
-          <strong>Author:</strong> {singleArticle.author}
+          Author: <strong>{singleArticle.author}</strong>
         </p>
         <p>{singleArticle.body}</p>
       </section>

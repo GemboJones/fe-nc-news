@@ -76,3 +76,9 @@ height: auto;
   padding: 0.75rem;
 }
 
+.update-votes{
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0 ;
+  gap: 0.5rem;
+}
