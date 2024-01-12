@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { getAllArticles } from '../utils/api'
+import { getArticles } from '../utils/api'
 import ArticleCard from './ArticleCard'
 import { Link } from "react-router-dom";
 
@@ -9,8 +9,8 @@ const ArticleList = () => {
   
   useEffect(() => {
     setIsLoading(true)
-    getAllArticles().then((allArticles) => {
-      setArticles(allArticles)
+    getArticles().then((articles) => {
+      setArticles(articles)
       setIsLoading(false)
     })
   }, [])
