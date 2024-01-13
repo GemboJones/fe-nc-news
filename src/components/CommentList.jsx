@@ -18,12 +18,6 @@ const CommentList = () => {
     })
   }, [article_id])
 
-  // const updateComments = (comment)=>{
-  //   setComments((currentComments)=>{
-  //     return [comment, ...currentComments]
-  //   })
-  // }
-
   if (isLoading) return <p>Loading...</p>
 
   return (

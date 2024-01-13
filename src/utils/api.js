@@ -35,8 +35,7 @@ export const patchArticleVote = (article_id, updateVote) => {
 export const postNewComment = (article_id, addNewComment) => {
     return axios.post(`${BASE_URL}/articles/${article_id}/comments`, addNewComment)
     .then((response) => {
-        console.log(response.data.commentAdded.body);
-        return response.data.commentAdded.body
+        return response.data.commentAdded
 
     })
 }
