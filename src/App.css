@@ -6,15 +6,16 @@
 }
 
 .app {
-  border-style: solid;
-  border-radius: 0.5rem;
-  border-color: lightgray;
+  /* background-color: rgb(228, 228, 228); */
+  /* border-style: solid;
+  border-radius: 0.5rem; */
+  /* border-color: lightgray; */
 }
 
 .header {
-  border-style: solid;
-  border-radius: 0.5rem;
-  border-color: rgb(255, 205, 41);
+  /* border-style: solid;
+  border-radius: 0.5rem; */
+  /* border-color: rgb(255, 205, 41); */
 }
 
 .article-list {
@@ -26,15 +27,15 @@
 
 .article-card {
   list-style-type: none;
-  border: 2px solid;
+  border: 3px solid;
   border-radius: 0.5rem;
-  border-color: rgb(236, 237, 241);
+  border-color: rgb(225, 226, 230);
   margin: 1.5rem 0;
 }
 
 .article-card:hover {
   background-color: #e4ecff;
-  border: 2px solid;
+  border: 3px solid;
   border-color: #cedcff;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08), 0 12px 30px 0 rgba(0, 0, 0, 0.08);
 }
@@ -46,9 +47,9 @@
 }
 
 .single-article {
-  border-style: solid;
+  border: 3px solid;
   border-radius: 0.5rem;
-  border-color: blue;
+  border-color: rgb(225, 226, 230);
   padding: 0rem;
 }
 
@@ -58,9 +59,10 @@ height: auto;
 }
 
 .comment-section {
-  border-style: solid;
+  margin-top: 20px;
+  /* border-style: solid;
   border-radius: 0.5rem;
-  border-color: darkorchid;
+  border-color: darkorchid; */
 }
 
 .comment-list {
